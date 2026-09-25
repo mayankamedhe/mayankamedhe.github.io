@@ -746,6 +746,28 @@ ul {
   margin-top: .3rem;
 }
 
+.pubs__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-top: .55rem;
+}
+
+.pubs__links a {
+  padding: .2rem .55rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--surface);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink);
+}
+
+.pubs__links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* --- Education ------------------------------------------------------------ */
 
 .edu li {
