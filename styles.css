@@ -462,11 +462,6 @@ ul {
   font-weight: 600;
 }
 
-.section__note {
-  color: var(--muted);
-  font-size: var(--step--1);
-}
-
 /* --- Work cards ----------------------------------------------------------- */
 
 .work-grid {
