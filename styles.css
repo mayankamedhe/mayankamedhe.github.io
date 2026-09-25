@@ -345,6 +345,10 @@ ul {
   font-weight: 500;
 }
 
+.hero__lede + .hero__lede {
+  margin-top: .85rem;
+}
+
 .hero__photo {
   border-radius: var(--radius);
   aspect-ratio: 1;
