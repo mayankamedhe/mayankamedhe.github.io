@@ -1,0 +1,9 @@
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Source images kept locally, not published
+media/_originals/

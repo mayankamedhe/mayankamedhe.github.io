@@ -1,130 +1,588 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Mayanka Medhe</title>
+<title>Mayanka Medhe · Embodied AI &amp; Human-Robot Interaction</title>
+<meta name="description" content="Mayanka Medhe builds embodied multimodal AI for robots that work alongside people. Master's student in Robotic Systems Development at Carnegie Mellon, previously Research Engineer at Honda R&amp;D Tokyo.">
+<meta name="author" content="Mayanka Medhe">
+<link rel="canonical" href="https://mayankamedhe.github.io/">
 
-    <meta name="author" content="Mayanka Medhe">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  </head>
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Mayanka Medhe · Embodied AI &amp; Human-Robot Interaction">
+<meta property="og:description" content="Embodied multimodal AI for robots that work alongside people. CMU Robotics Institute, previously Honda R&amp;D Tokyo.">
+<meta property="og:url" content="https://mayankamedhe.github.io/">
+<meta property="og:image" content="https://mayankamedhe.github.io/images/MayankaMedhe.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mayanka Medhe · Embodied AI &amp; Human-Robot Interaction">
+<meta name="twitter:description" content="Embodied multimodal AI for robots that work alongside people. CMU Robotics Institute, previously Honda R&amp;D Tokyo.">
+<meta name="twitter:image" content="https://mayankamedhe.github.io/images/MayankaMedhe.jpg">
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;"><tbody>
-      <tr><td>
-        <table style="width:100%;border:0px;border-spacing:0px;margin:auto;"><tbody>
-          <tr>
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p class="name" style="text-align: center; font-size: 32px; font-weight: 600;">
-                Mayanka Medhe
-              </p>
-              <p>
-                I'm a graduate student in the <a href="https://mrsd.ri.cmu.edu/">Master of Robotic Systems Development (MRSD)</a> program at the <a href="https://www.ri.cmu.edu/">Carnegie Mellon University Robotics Institute</a>. I'm a research assistant in the <a href="https://harp.ri.cmu.edu/">HARP Lab</a> with <a href="https://hennyadmoni.com/">Prof. Henny Admoni</a>, where I work on multimodal human-in-the-loop reward learning to adapt visuomotor policies to out-of-distribution settings in real time. For my Nissan-sponsored capstone, I'm studying whether a Unitree G1 humanoid can learn factory manipulation tasks mainly from human video instead of teleoperated demonstrations.
-              </p>
-              <p>
-                Before CMU, I was a Research Engineer at <a href="https://global.honda/en/tech/Honda_CI_Micro-mobility/">Honda R&D Tokyo</a>, where I built embodied multimodal AI and interaction systems for autonomous micro-mobility robots like CiKoMa and WaPOCHI. That work used <b>vision-language models</b>, <b>egocentric perception</b>, and <b>spatial reasoning</b> for natural interaction and user identification in busy real-world settings.
-              </p>
-              <p>
-                I received my M.S. from the <a href="https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml">University of Tokyo</a>, advised by <a href="https://sites.google.com/ut-vision.org/ysato/">Prof. Yoichi Sato</a>. There I researched multimodal video understanding with eye gaze and natural language, in collaboration with RIKEN CBS. I received my B.Tech. from <a href="https://www.iitb.ac.in/">IIT Bombay</a>, advised by <a href="http://www.sc.iitb.ac.in/~leena/">Prof. Leena Vachhani</a>.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:mayankaanilmedhe@gmail.com">Email</a> &nbsp;/&nbsp;
-                <a href="data/Mayanka_Medhe_CV.pdf">CV</a> &nbsp;/&nbsp;
-                <!-- <a href="https://scholar.google.com/">Scholar</a> &nbsp;/&nbsp; -->
-                <a href="https://github.com/mayankamedhe">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/mayanka-medhe/">LinkedIn</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:37%;max-width:37%;text-align:center">
-              <a href="images/MayankaMedhe.jpg"><img style="width:100%;max-width:100%;border-radius:50%;object-fit:cover;" alt="profile photo" src="images/MayankaMedhe.jpg"></a>
-            </td>
-          </tr>
-        </tbody></table>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F5C4E'/%3E%3Ctext x='32' y='44' font-family='Helvetica,Arial,sans-serif' font-size='34' font-weight='700' fill='%23FAFAF8' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 
-        <table style="width:100%;margin-top:30px;"><tbody>
-          <tr><td style="padding:16px;vertical-align:middle">
-            <h2>Research Interests</h2>
-            <p>
-              Vision-Language Models, Egocentric Vision, Human-Robot Interaction, Spatial Reasoning for Embodied AI
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<script>
+// Run before paint: opt into the scroll-reveal start state only when JS is alive and
+// motion is welcome, and apply a saved theme without a flash of the wrong colors.
+(function () {
+  var r = document.documentElement;
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') r.setAttribute('data-theme', t);
+  } catch (e) {}
+  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if ('IntersectionObserver' in window) r.classList.add('js-reveal');
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mayanka Medhe",
+  "url": "https://mayankamedhe.github.io/",
+  "image": "https://mayankamedhe.github.io/images/MayankaMedhe.jpg",
+  "jobTitle": "Master's Student, Robotic Systems Development",
+  "description": "Robotics researcher working on embodied multimodal AI and human-robot interaction.",
+  "email": "mmedhe@andrew.cmu.edu",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Carnegie Mellon University Robotics Institute"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Tokyo" },
+    { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Bombay" }
+  ],
+  "knowsAbout": [
+    "Vision-Language Models",
+    "Egocentric Vision",
+    "Human-Robot Interaction",
+    "Spatial Reasoning",
+    "Robot Learning"
+  ],
+  "sameAs": [
+    "https://github.com/mayankamedhe",
+    "https://www.linkedin.com/in/mayanka-medhe/"
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap site-header__inner">
+    <a class="site-header__name" href="#top">Mayanka Medhe</a>
+    <nav class="site-nav" aria-label="Sections">
+      <a class="is-section" href="#work">Work</a>
+      <a class="is-section" href="#experience">Experience</a>
+      <a class="is-section" href="#publications">Papers</a>
+      <a class="is-cv" href="data/Mayanka_Medhe_CV.pdf">CV</a>
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch color theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero__grid">
+        <div>
+          <p class="mono hero__eyebrow">Embodied AI &amp; Human-Robot Interaction</p>
+          <h1>I build robots that<br>understand <span class="accent">people</span>.</h1>
+          <p class="hero__lede">
+            I work on multimodal perception and interaction for robots that operate around
+            people in messy, real environments. I am a first-year master’s student in
+            Robotic Systems Development at the <strong>CMU Robotics Institute</strong> and a
+            research assistant in the HARP Lab, teaching manipulation policies to learn from
+            human video. Before that I spent four years at
+            <strong>Honda R&amp;D Tokyo</strong> shipping vision-language interaction systems
+            onto micro-mobility robots that met thousands of real users.
+          </p>
+
+          <div class="hero__links">
+            <a href="mailto:mmedhe@andrew.cmu.edu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              Email
+            </a>
+            <a href="data/Mayanka_Medhe_CV.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              CV
+            </a>
+            <a href="https://github.com/mayankamedhe">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/mayanka-medhe/">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14M7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <img class="hero__photo" src="images/profile.jpg" alt="Mayanka Medhe" width="520" height="520" fetchpriority="high">
+      </div>
+
+      <dl class="affiliations">
+        <dt>Affiliations</dt>
+        <dd>Carnegie Mellon</dd>
+        <dd>ex-Honda R&amp;D Tokyo</dd>
+        <dd>UTokyo</dd>
+        <dd>IIT Bombay</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================== WORK ===================== -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2>Selected work</h2>
+        <p class="section__note">Systems I designed, built, and put in front of real users.</p>
+      </div>
+
+      <div class="work-grid">
+
+        <article class="card reveal">
+          <div class="card__media card__media--split" data-placeholder="media/work/smartwatch-robot.jpg">
+            <a href="media/work/smartwatch-robot.jpg" aria-label="View full-size photo of the WaPOCHI robot">
+              <img src="media/work/smartwatch-robot.jpg" alt="The WaPOCHI micro-mobility robot on a street" loading="lazy" decoding="async">
+            </a>
+            <a href="media/work/smartwatch-app.jpg" aria-label="View full-size photo of the companion app in use">
+              <img class="pos-left" src="media/work/smartwatch-app.jpg" alt="A person issuing a voice command to WaPOCHI from a handheld app" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2022–2026</span></p>
+            <h3>Smartwatch-robot interaction</h3>
+            <p class="card__desc">
+              A vision-language control interface that turns spoken intent on a smartwatch into
+              robot behavior for autonomous micro-mobility. Deployed in a public
+              proof-of-concept in unstructured outdoor environments and showcased at IFAC 2023.
             </p>
-          </td></tr>
-        </tbody></table>
+            <p class="metric"><span class="metric__value">5,000+</span><span class="metric__label">users reached</span></p>
+          </div>
+        </article>
 
-        <table style="width:100%;margin-top:20px;"><tbody>
-          <tr><td style="padding:16px;vertical-align:middle">
-            <h2>Selected Work</h2>
-            <p><b>Smartwatch-Robot Interaction System (Honda R&D)</b> — Led development of a vision-language control interface for micro-mobility robots via smartwatch voice commands; deployed in public PoC with 1000+ users.</p>
-            <p><b>Spatial RAG Module</b> — Built a Spatial Retrieval-Augmented Generation pipeline to interpret vague geospatial natural language queries for micro-mobility navigation.</p>
-            <p><b>Pedestrian Attribute Recognition</b> — Developed fine-grained person identification models for user-aware following and leading behavior in crowds.</p>
-          </td></tr>
-        </tbody></table>
+        <article class="card reveal">
+          <div class="card__media card__media--figure" data-placeholder="media/work/spatial-rag.jpg">
+            <a href="media/work/spatial-rag.jpg" aria-label="View the full-size retrieval pipeline diagram">
+              <img src="media/work/spatial-rag.jpg" alt="Pipeline diagram: a spoken description feeds a spatially-aware bi-encoder retrieval stage and an OCR-aware cross-encoder re-ranker, which selects the correct map tile" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2025–2026</span></p>
+            <h3>Text-guided map retrieval</h3>
+            <p class="card__desc">
+              Spatial retrieval-augmented generation for vague geospatial language such as
+              "the café near the second crossing". GPS-contrastive CLIP embeddings with an
+              OCR-aware re-ranker, so the robot can localize from a description rather than a
+              coordinate.
+            </p>
+            <p class="metric"><span class="metric__value">+18.6 pp</span><span class="metric__label">R@1 over SOTA</span></p>
+          </div>
+        </article>
 
-        <table style="width:100%;margin-top:20px;"><tbody>
-          <tr><td style="padding:16px;vertical-align:middle">
-            <h2>Publications & Patents</h2>
-            <ul>
-              <li>Medhe, M., Hosomi, N. “User Localization in Camera Space using Combined User and Surrounding Object Information.” <i>JP Patent Filed</i>, 2025.</li>
-              <li>Medhe, M., Kondapally, A. R., Yamada, K., Yanaka, H. “Improving Reasoning for Outdoor Navigation using Commonsense Knowledge Insertion.” <i>SICE 2023</i>.</li>
-              <li>Upadhyay, U.*, Shah, N.*, Ravikanti, S.*, <b>Medhe, M.*</b> “Transformer-Based Reinforcement Learning for Games.” <i>arXiv</i>, 2019.</li>
-            </ul>
-          </td></tr>
-        </tbody></table>
+        <article class="card reveal">
+          <div class="card__media card__media--stack card__media--figure" data-placeholder="media/work/gaze-method.jpg">
+            <a href="media/work/gaze-method.jpg" aria-label="View the full-size model architecture diagram">
+              <img src="media/work/gaze-method.jpg" alt="Architecture diagram: video, audio and gaze-trace encoders feed a multimodal cross encoder that produces dense captions" loading="lazy" decoding="async">
+            </a>
+            <a href="media/work/gaze-dataset.jpg" aria-label="View the full-size dataset collection diagram">
+              <img src="media/work/gaze-dataset.jpg" alt="Dataset diagram: a viewer watches video while eye trace and audio transcription are recorded against a shared timeline" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>UTokyo · Sato Lab</span><span>2020–2022</span></p>
+            <h3>Gaze-guided video captioning</h3>
+            <p class="card__desc">
+              Where a person looks tells you what matters in a scene. I folded eye-gaze priors
+              into I3D features through attention maps for dense video captioning, and released
+              a gaze-aligned description dataset covering 2.5 hours, 33 viewers, 15 languages.
+            </p>
+            <p class="metric"><span class="metric__value">+24.4%</span><span class="metric__label">action grounding</span></p>
+          </div>
+        </article>
 
-        <table style="width:100%;margin-top:20px;"><tbody>
-          <tr><td style="padding:16px;vertical-align:middle">
-            <h2>Education</h2>
-            <p><b>University of Tokyo</b>, M.S. in Information Science & Technology (2020–2022)<br>Thesis: <a href="data/Mayanka_Medhe_masters_thesis.pdf" target="_blank"> Multimodal understanding of videos using eye gaze and natural language</a> (Advisor: Prof. Yoichi Sato)</p>
-            <p><b>IIT Bombay</b>, B.Tech. in Computer Science and Engineering (2016–2020)<br>Thesis: Multi-agent path planning using reinforcement learning</p>
-          </td></tr>
-        </tbody></table>
+        <article class="card reveal">
+          <div class="card__media card__media--figure" data-placeholder="media/work/pointing.jpg">
+            <a href="media/work/pointing.jpg" aria-label="View the full-size pointing-gesture figure">
+              <img src="media/work/pointing.jpg" alt="A person points at a vending machine while the vehicle narrows a cone of candidate targets to the one they meant" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2024</span></p>
+            <h3>Pointing-gesture stop estimation</h3>
+            <p class="card__desc">
+              Point at the curb and the vehicle stops there. Stereo triangulation combined with
+              3D human pose recovers the intended stop position from a single gesture, removing
+              the need for a map pin or a spoken address.
+            </p>
+            <p class="metric"><span class="metric__value">Patent</span><span class="metric__label">application filed</span></p>
+          </div>
+        </article>
 
-      <!-- ==================== VOLUNTEERING ==================== -->
-<table style="width:100%;margin-top:20px;"><tbody>
-  <tr>
-    <td style="padding:16px;vertical-align:middle">
-      <h2>Volunteering</h2>
+        <article class="card reveal">
+          <div class="card__media" data-placeholder="media/work/g1-manipulation.jpg">
+            <a href="media/work/g1-manipulation.jpg" aria-label="View full-size photo of the Unitree G1">
+              <img class="pos-high" src="media/work/g1-manipulation.jpg" alt="A Unitree G1 humanoid suspended in a safety harness inside a test cage" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>CMU × Nissan</span><span>2026–</span></p>
+            <h3>Learning manipulation from human video</h3>
+            <p class="card__desc">
+              Teleoperated demonstrations do not scale on a factory floor. My capstone asks
+              whether a Unitree G1 humanoid can learn manipulation tasks mainly from ordinary
+              human video, retargeting it for vision-language-action policy pre-training.
+            </p>
+            <p class="metric"><span class="metric__value">In progress</span><span class="metric__label">Nissan-sponsored</span></p>
+          </div>
+        </article>
 
-      <div style="display:flex;align-items:center;margin-bottom:20px;">
-        <!-- <img src="images/saturdaykids.jpg" alt="Saturday Kids Japan" -->
-             <!-- style="width:120px;height:120px;border-radius:10px;object-fit:cover;margin-right:16px;"> -->
-        <div>
-          <p><b>Freelance Instructor — Saturday Kids Japan</b> (2021–2022)</p>
-          <p>Conducted interactive coding and robotics workshops for children aged 5–14, using tools such as Scratch, Minecraft, and LEGO Robotics to encourage curiosity and creativity in learning.</p>
-        </div>
+        <article class="card reveal">
+          <div class="card__media card__media--figure" data-placeholder="media/work/pedestrian.jpg">
+            <a href="media/work/pedestrian.jpg" aria-label="View the full-size attribute recognition figure">
+              <img src="media/work/pedestrian.jpg" alt="Three candidate pedestrians scored by distinguishing attribute, with the robot picking the most confident cue to confirm its user" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2023–2024</span></p>
+            <h3>Who to follow in a crowd</h3>
+            <p class="card__desc">
+              Fine-grained pedestrian attribute recognition so a robot keeps track of its own
+              user while leading or following through a busy street, optimized with TensorRT to
+              run in real time on Jetson hardware at the edge.
+            </p>
+            <p class="metric"><span class="metric__value">Real-time</span><span class="metric__label">on-device inference</span></p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2>Experience</h2>
       </div>
 
-      <div style="display:flex;align-items:center;margin-bottom:20px;">
-        <!-- <img src="images/isa.jpg" alt="ISA Japan"
-             style="width:120px;height:120px;border-radius:10px;object-fit:cover;margin-right:16px;"> -->
-        <div>
-          <p><b>Volunteer — ISA Japan (International School Assist)</b> (2021–2022)</p>
-          <p>Organized empowerment and English-speaking programs at high schools across Japan, fostering teamwork, presentation skills, and cultural exchange among students.</p>
-        </div>
+      <ul class="timeline">
+        <li class="reveal">
+          <p class="mono timeline__when">Sep 2026–present</p>
+          <div>
+            <p class="timeline__role">Research Assistant</p>
+            <span class="mono timeline__org"><a href="https://harp.ri.cmu.edu/">HARP Lab</a>, Carnegie Mellon · Pittsburgh</span>
+            <p class="timeline__detail">
+              Multimodal human-in-the-loop reward learning that adapts visuomotor policies to
+              out-of-distribution settings in real time, with
+              <a href="https://hennyadmoni.com/">Prof. Henny Admoni</a>.
+            </p>
+          </div>
+        </li>
+
+        <li class="reveal">
+          <p class="mono timeline__when">Sep 2022–Aug 2026</p>
+          <div>
+            <p class="timeline__role">Research Engineer, Human-Robot Interaction</p>
+            <span class="mono timeline__org"><a href="https://global.honda/en/tech/Honda_CI_Micro-mobility/">Honda R&amp;D</a> · Tokyo</span>
+            <p class="timeline__detail">
+              Embodied multimodal AI for autonomous micro-mobility robots including CiKoMa and
+              WaPOCHI. Led the vision-language interaction system through public deployment,
+              built pointing-gesture and pedestrian-attribute perception, and proposed the
+              text-guided map retrieval method now under patent.
+            </p>
+            <span class="badge">Honda R&amp;D Executive Award</span>
+          </div>
+        </li>
+
+        <li class="reveal">
+          <p class="mono timeline__when">May 2021–Oct 2021</p>
+          <div>
+            <p class="timeline__role">Research Engineer, Sensing &amp; Perception</p>
+            <span class="mono timeline__org">Tier IV · Tokyo</span>
+            <p class="timeline__detail">
+              Built a ROS-based object detection evaluation framework for autonomous driving
+              that flagged false positives and negatives across weather conditions.
+            </p>
+          </div>
+        </li>
+
+        <li class="reveal">
+          <p class="mono timeline__when">Oct 2020–May 2022</p>
+          <div>
+            <p class="timeline__role">Research Assistant</p>
+            <span class="mono timeline__org"><a href="https://sites.google.com/ut-vision.org/ysato/">Sato Lab</a>, University of Tokyo</span>
+            <p class="timeline__detail">
+              Multimodal video understanding with eye gaze and natural language, in
+              collaboration with RIKEN CBS.
+            </p>
+          </div>
+        </li>
+
+        <li class="reveal">
+          <p class="mono timeline__when">May 2018–Jul 2018</p>
+          <div>
+            <p class="timeline__role">Research Engineer, Vision Team</p>
+            <span class="mono timeline__org">Honda Research Institute · Wako</span>
+            <p class="timeline__detail">
+              Adaptive-resolution 3D volumetric mapping from ORB-SLAM2 point clouds for world
+              modeling on the ASIMO bipedal robot.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section class="section" id="publications">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2>Publications &amp; patents</h2>
       </div>
 
-      <div style="display:flex;align-items:center;">
-        <!-- <img src="images/farmfrance.jpg" alt="Farm volunteering France"
-             style="width:120px;height:120px;border-radius:10px;object-fit:cover;margin-right:16px;"> -->
-        <div>
-          <p><b>Farm Volunteer — France</b> (2024)</p>
-          <p>Participated in sustainable farming activities, animal care, and permaculture maintenance while engaging in cultural exchange and eco-living practices in rural France.</p>
-        </div>
+      <ul class="pubs">
+        <li class="reveal">
+          <p class="pubs__title">Two-step spatially-aware and OCR-grounded map tile retrieval and point prediction for text-guided localization</p>
+          <p class="pubs__authors"><span class="self">Mayanka Medhe</span>, Naoki Hosomi</p>
+          <p class="mono pubs__venue">Invention disclosure filed, Honda · 2026</p>
+        </li>
+
+        <li class="reveal">
+          <p class="pubs__title">User localization in camera space using combined user and surrounding object information</p>
+          <p class="pubs__authors"><span class="self">Mayanka Medhe</span>, Naoki Hosomi</p>
+          <p class="mono pubs__venue">PCT patent application filed · 2025</p>
+        </li>
+
+        <li class="reveal">
+          <p class="pubs__title">Improving reasoning for outdoor navigation using commonsense knowledge insertion</p>
+          <p class="pubs__authors"><span class="self">Mayanka Medhe</span>, Anirudh Reddy Kondapally, Kentaro Yamada, Hitomi Yanaka</p>
+          <p class="mono pubs__venue">SICE Annual Conference · 2023</p>
+        </li>
+
+        <li class="reveal">
+          <p class="pubs__title">Transformer-based reinforcement learning for games</p>
+          <p class="pubs__authors">Uddeshya Upadhyay*, Nikunj Shah*, Sucheta Ravikanti*, <span class="self">Mayanka Medhe</span>* <span class="mono">(equal contribution)</span></p>
+          <p class="mono pubs__venue">arXiv preprint · 2019</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section" id="education">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2>Education</h2>
       </div>
 
-      </td>
-      </tr>
-    </tbody></table>
+      <ul class="edu">
+        <li class="reveal">
+          <p class="edu__school">Carnegie Mellon University</p>
+          <span class="mono edu__degree">M.S. Robotic Systems Development · 2026–2028</span>
+          <p class="edu__extra">
+            <a href="https://mrsd.ri.cmu.edu/">MRSD</a> at the
+            <a href="https://www.ri.cmu.edu/">Robotics Institute</a>. Capstone: a
+            vision-language-action manipulation stack on the Unitree G1, sponsored by Nissan.
+          </p>
+        </li>
 
-        <table style="width:100%;margin-top:20px;"><tbody>
-          <tr><td style="padding:16px;vertical-align:middle;text-align:center;color:#777;font-size:0.9em">
-            © 2026 Mayanka Medhe | Last updated September 2026<br>
-            Adapted from <a href="https://github.com/jonbarron/website" target="_blank">Jon Barron’s academic website template</a>.
-          </td></tr>
-        </tbody></table>
+        <li class="reveal">
+          <p class="edu__school">University of Tokyo</p>
+          <span class="mono edu__degree">M.S. Information Science &amp; Technology · 2020–2022 · MEXT Scholar</span>
+          <p class="edu__extra">
+            Thesis:
+            <a href="data/Mayanka_Medhe_masters_thesis.pdf">Gaze-guided dense video captioning for egocentric attention understanding</a>,
+            advised by <a href="https://sites.google.com/ut-vision.org/ysato/">Prof. Yoichi Sato</a>.
+          </p>
+        </li>
 
-      </td></tr>
-    </tbody></table>
-  </body>
+        <li class="reveal">
+          <p class="edu__school">IIT Bombay</p>
+          <span class="mono edu__degree">B.Tech. (Honors) Computer Science &amp; Engineering · 2016–2020</span>
+          <p class="edu__extra">
+            Thesis: multi-agent path planning and collision avoidance using reinforcement
+            learning, advised by <a href="http://www.sc.iitb.ac.in/~leena/">Prof. Leena Vachhani</a>.
+            Exchange semester at Simon Fraser University, Canada.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2>Toolkit</h2>
+      </div>
+
+      <div class="skills reveal">
+        <div>
+          <h3>ML &amp; perception</h3>
+          <ul class="chips">
+            <li>PyTorch</li><li>VLMs / CLIP</li><li>Transformers</li><li>ORB-SLAM2</li>
+            <li>Pose estimation</li><li>Stereo vision</li><li>TensorRT</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Robotics</h3>
+          <ul class="chips">
+            <li>ROS / ROS2</li><li>MuJoCo</li><li>Gazebo</li><li>MoveIt</li>
+            <li>Teleoperation</li><li>Motion planning</li><li>Edge deployment</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Engineering</h3>
+          <ul class="chips">
+            <li>Python</li><li>C++</li><li>CUDA</li><li>Docker</li><li>Linux</li><li>CI/CD</li><li>SQL</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li>English</li><li>日本語</li><li>हिन्दी</li><li>मराठी</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VOLUNTEERING ===================== -->
+  <section class="section" id="beyond">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2>Beyond the lab</h2>
+      </div>
+
+      <ul class="volunteer">
+        <li class="reveal">
+          <p class="mono volunteer__when">2024</p>
+          <p class="volunteer__what">
+            <strong>Farm volunteer, rural France</strong>
+            <span>Sustainable farming, animal care, and permaculture maintenance.</span>
+          </p>
+        </li>
+        <li class="reveal">
+          <p class="mono volunteer__when">2021–2022</p>
+          <p class="volunteer__what">
+            <strong>Instructor, Saturday Kids Japan</strong>
+            <span>Coding and robotics workshops for children aged 5 to 14, using Scratch, Minecraft, and LEGO Robotics.</span>
+          </p>
+        </li>
+        <li class="reveal">
+          <p class="mono volunteer__when">2021–2022</p>
+          <p class="volunteer__what">
+            <strong>Volunteer, ISA Japan</strong>
+            <span>Empowerment and English-speaking programs at high schools across Japan.</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p>© <span id="year">2026</span> Mayanka Medhe</p>
+    <p><a href="mailto:mmedhe@andrew.cmu.edu">mmedhe@andrew.cmu.edu</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var toggle = document.getElementById('theme-toggle');
+
+  function store(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+  }
+
+  function read(key) {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
+  }
+
+  function systemDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+  function sync() {
+    var explicit = root.getAttribute('data-theme');
+    var dark = explicit ? explicit === 'dark' : systemDark();
+    toggle.setAttribute('data-resolved', dark ? 'dark' : 'light');
+    toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+  }
+
+  // The head script already applied any saved theme; this just syncs the button.
+  sync();
+
+  toggle.addEventListener('click', function () {
+    var explicit = root.getAttribute('data-theme');
+    var dark = explicit ? explicit === 'dark' : systemDark();
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    store('theme', next);
+    sync();
+  });
+
+  if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', sync);
+  }
+
+  // Header hairline once scrolled
+  var header = document.querySelector('.site-header');
+  var onScroll = function () {
+    header.classList.toggle('is-stuck', window.scrollY > 8);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Reveal on scroll. Only runs when the head script opted in, so the no-JS and
+  // reduced-motion paths already have everything visible.
+  if (root.classList.contains('js-reveal')) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  }
+
+  // Media slots fall back to a labeled placeholder until real files land in
+  // media/work/. A slot holding two images only falls back once both have failed.
+  document.querySelectorAll('.card__media').forEach(function (slot) {
+    var imgs = slot.querySelectorAll('img');
+    var failed = 0;
+    var check = function () {
+      if (++failed === imgs.length) slot.classList.add('is-empty');
+    };
+    imgs.forEach(function (img) {
+      if (img.complete && img.naturalWidth === 0) check();
+      else img.addEventListener('error', check);
+    });
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
 </html>
