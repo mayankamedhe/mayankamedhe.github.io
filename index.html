@@ -175,11 +175,87 @@
             <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2022–2026</span></p>
             <h3>Smartwatch-robot interaction</h3>
             <p class="card__desc">
-              A vision-language control interface that turns spoken intent on a smartwatch into
-              robot behavior for autonomous micro-mobility. Deployed in a public
-              proof-of-concept in unstructured outdoor environments and showcased at IFAC 2023.
+              VLM-based voice-intent recognition on a smartwatch, grounded into robot control
+              commands for autonomous micro-mobility. Deployed in a public proof-of-concept in
+              unstructured outdoor environments and showcased at IFAC 2023.
             </p>
             <p class="metric"><span class="metric__value">5,000+</span><span class="metric__label">users reached</span></p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media card__media--figure" data-placeholder="media/work/far-method.jpg">
+            <a href="media/work/far-method.jpg" aria-label="View the full-size FAR method diagram">
+              <img src="media/work/far-method.jpg" alt="FAR method diagram: a library of skill code from earlier tasks feeds a code agent that reuses and adapts it, then executes on the robot and refines from feedback, with examples like stacking more cups and hanging a cap" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>CMU Robotics Institute</span><span>2026</span></p>
+            <h3><a href="https://r2r-cmu.github.io/faster-agentic-robotics/">FAR: faster agentic robotics</a></h3>
+            <p class="card__desc">
+              Coding agents rebuild perception and motion code from scratch for every new
+              task, which costs time and tokens. FAR lets the agent reuse tested code from a
+              similar task on the same arm, adapt it, and refine it from execution feedback.
+              Evaluated on 5 simulated tasks and 10 real-robot transfers across two Kinova Gen3
+              arms. Co-first author, advised by Jeffrey Ichnowski.
+            </p>
+            <p class="metric"><span class="metric__value">42 skills</span><span class="metric__label">across 7 donor libraries</span></p>
+            <p class="card__links">
+              <a href="https://r2r-cmu.github.io/faster-agentic-robotics/">Project page</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media card__media--split" data-placeholder="media/work/g1-teleop-real.jpg">
+            <a href="https://www.youtube.com/watch?v=mCz4AMIlXJs" aria-label="Watch the real-world G1 teleoperation video on YouTube">
+              <img src="media/work/g1-teleop-real.jpg" alt="Two operators beside a Unitree G1 humanoid holding a red tray in the lab" loading="lazy" decoding="async">
+            </a>
+            <a href="https://www.youtube.com/watch?v=1t6P3ezJdj8" aria-label="Watch the MuJoCo G1 teleoperation video on YouTube">
+              <img class="pos-right" src="media/work/g1-teleop-sim.jpg" alt="An operator holding a VR controller while a simulated G1 mirrors the pose in MuJoCo" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>CMU MRSD</span><span>2026</span></p>
+            <h3><a href="https://mayankchandak.vercel.app/projects/unitree-g1-sonic-teleop">Whole-body VR teleop of the G1</a></h3>
+            <p class="card__desc">
+              Whole-body teleoperation of a 29-DOF Unitree G1 with dexterous hands, driven by
+              NVIDIA GR00T SONIC from a neck-mounted Meta Quest 3S. Body-follow walking, hot
+              handover into learned control without a gantry, all running on an onboard
+              Jetson Orin NX. Equal contribution.
+            </p>
+            <p class="metric"><span class="metric__value">500 Hz</span><span class="metric__label">onboard whole-body control</span></p>
+            <p class="card__links">
+              <a href="https://www.youtube.com/watch?v=mCz4AMIlXJs">Real robot</a>
+              <a href="https://www.youtube.com/watch?v=1t6P3ezJdj8">MuJoCo</a>
+              <a href="https://mayankchandak.vercel.app/projects/unitree-g1-sonic-teleop">Write-up</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media card__media--split" data-placeholder="media/work/g1-manipulation.jpg">
+            <a href="media/work/g1-manipulation.jpg" aria-label="View full-size photo of the Unitree G1">
+              <img class="pos-high" src="media/work/g1-manipulation.jpg" alt="A Unitree G1 humanoid suspended in a safety harness inside a test cage" loading="lazy" decoding="async">
+            </a>
+            <a href="https://www.youtube.com/watch?v=cs9xwbYZmUU" aria-label="Watch the agentic pick-and-place video on YouTube">
+              <img src="media/work/g1-pick-place.jpg" alt="A simulated Unitree G1 reaching for a blue ball on a mat" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>CMU × Nissan</span><span>2026–present</span></p>
+            <h3>Learning manipulation from human video</h3>
+            <p class="card__desc">
+              Teleoperated demonstrations do not scale on a factory floor. My capstone asks
+              whether a Unitree G1 humanoid can learn manipulation mainly from ordinary human
+              video, retargeted onto the robot through NVIDIA GR00T SONIC to pre-train a
+              vision-language-action policy.
+            </p>
+            <p class="metric"><span class="metric__value">In progress</span><span class="metric__label">Nissan-sponsored</span></p>
+            <p class="card__links">
+              <a href="https://www.youtube.com/watch?v=cs9xwbYZmUU">Agentic pick-and-place</a>
+              <a href="https://www.youtube.com/@R2RCMU">Team channel</a>
+            </p>
           </div>
         </article>
 
@@ -193,12 +269,27 @@
             <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2025–2026</span></p>
             <h3>Text-guided map retrieval</h3>
             <p class="card__desc">
-              Spatial retrieval-augmented generation for vague geospatial language such as
-              “the café near the second crossing.” GPS-contrastive CLIP embeddings with an
-              OCR-aware re-ranker, so the robot can localize from a description rather than a
-              coordinate.
+              Localizing from vague language such as “the café near the second crossing.” A
+              GPS-contrastive CLIP bi-encoder retrieves candidate map tiles, an OCR-aware
+              cross-encoder re-ranks them, and a point is predicted within the top tile.
             </p>
             <p class="metric"><span class="metric__value">+18.6 pp</span><span class="metric__label">R@1 over SOTA</span></p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <video class="pos-track" src="media/work/f1tenth.mp4" poster="media/work/f1tenth-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="F1TENTH cars racing around a tube-lined indoor track"></video>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>Carnegie Mellon</span><span>2026</span></p>
+            <h3>F1TENTH autonomous racing</h3>
+            <p class="card__desc">
+              A 1:10-scale autonomous race car: 2D LiDAR particle-filter localization, RRT*
+              planning tracked by pure pursuit, and follow-the-gap for reactive obstacle
+              avoidance, raced head-to-head on a tight indoor track.
+            </p>
+            <p class="metric"><span class="metric__value">4th</span><span class="metric__label">of 10 teams</span></p>
           </div>
         </article>
 
@@ -233,29 +324,11 @@
             <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2024</span></p>
             <h3>Pointing-gesture stop estimation</h3>
             <p class="card__desc">
-              Point at the curb and the vehicle stops there. Stereo triangulation combined with
-              3D human pose recovers the intended stop position from a single gesture, removing
-              the need for a map pin or a spoken address.
+              Point at the curb and the vehicle stops there. Eye and fingertip keypoints are
+              triangulated from stereo 3D pose, and the eye-to-fingertip ray is intersected with
+              the ground plane to get the stop position, with no map pin or spoken address.
             </p>
             <p class="metric"><span class="metric__value">Patent</span><span class="metric__label">application filed</span></p>
-          </div>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__media" data-placeholder="media/work/g1-manipulation.jpg">
-            <a href="media/work/g1-manipulation.jpg" aria-label="View full-size photo of the Unitree G1">
-              <img class="pos-high" src="media/work/g1-manipulation.jpg" alt="A Unitree G1 humanoid suspended in a safety harness inside a test cage" loading="lazy" decoding="async">
-            </a>
-          </div>
-          <div class="card__body">
-            <p class="mono card__meta"><span>CMU × Nissan</span><span>2026–present</span></p>
-            <h3>Learning manipulation from human video</h3>
-            <p class="card__desc">
-              Teleoperated demonstrations do not scale on a factory floor. My capstone asks
-              whether a Unitree G1 humanoid can learn manipulation tasks mainly from ordinary
-              human video, retargeting it for vision-language-action policy pre-training.
-            </p>
-            <p class="metric"><span class="metric__value">In progress</span><span class="metric__label">Nissan-sponsored</span></p>
           </div>
         </article>
 
@@ -269,9 +342,9 @@
             <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2023–2024</span></p>
             <h3>Who to follow in a crowd</h3>
             <p class="card__desc">
-              Fine-grained pedestrian attribute recognition so a robot keeps track of its own
-              user while leading or following through a busy street, optimized with TensorRT to
-              run in real time on Jetson hardware at the edge.
+              User re-identification from fine-grained pedestrian attributes, choosing the most
+              discriminative attribute among nearby pedestrians so the robot keeps its user while
+              leading or following through a busy street. TensorRT-optimized for Jetson.
             </p>
             <p class="metric"><span class="metric__value">Real-time</span><span class="metric__label">on-device inference</span></p>
           </div>
@@ -364,6 +437,15 @@
 
       <ul class="pubs">
         <li class="reveal">
+          <p class="pubs__title">FAR: Faster agentic robotics with fewer tokens</p>
+          <p class="pubs__authors">Mayank Chandak*, Shi Chen*, Yu-Lun Chou*, Vamsi Grandhi*, <span class="self">Mayanka Medhe</span>*, Jeffrey Ichnowski <span class="mono">(equal contribution)</span></p>
+          <p class="mono pubs__venue">Preprint, arXiv forthcoming · 2026</p>
+          <p class="pubs__links">
+            <a href="https://r2r-cmu.github.io/faster-agentic-robotics/">Project page</a>
+          </p>
+        </li>
+
+        <li class="reveal">
           <p class="pubs__title">Two-step spatially-aware and OCR-grounded map tile retrieval and point prediction for text-guided localization</p>
           <p class="pubs__authors"><span class="self">Mayanka Medhe</span>, Naoki Hosomi</p>
           <p class="mono pubs__venue">Invention disclosure filed, Honda · 2026</p>
@@ -454,7 +536,7 @@
           <h3>Robotics</h3>
           <ul class="chips">
             <li>ROS / ROS2</li><li>MuJoCo</li><li>Gazebo</li><li>MoveIt</li>
-            <li>Teleoperation</li><li>Motion planning</li><li>Edge deployment</li>
+            <li>VR teleoperation</li><li>Motion planning (RRT*)</li><li>Coding agents</li><li>Edge deployment</li>
           </ul>
         </div>
         <div>
@@ -590,6 +672,16 @@
       else img.addEventListener('error', check);
     });
   });
+
+  // Card videos are silent loops; hold them on the poster frame for readers who
+  // asked for less motion.
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.card__media video').forEach(function (v) {
+      v.removeAttribute('autoplay');
+      v.pause();
+      v.setAttribute('controls', '');
+    });
+  }
 
   document.getElementById('year').textContent = new Date().getFullYear();
 })();

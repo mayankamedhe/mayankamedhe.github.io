@@ -494,7 +494,9 @@ ul {
   overflow: hidden;
 }
 
-.card__media img {
+.card__media img,
+.card__media video {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -546,6 +548,15 @@ ul {
 
 .card__media img.pos-high {
   object-position: center 20%;
+}
+
+.card__media img.pos-right {
+  object-position: 72% center;
+}
+
+/* The race clip is portrait; frame the straight where the cars pass. */
+.card__media video.pos-track {
+  object-position: center 68%;
 }
 
 /* Placeholder shown until a real file lands in media/work/ */
@@ -746,14 +757,16 @@ ul {
   margin-top: .3rem;
 }
 
-.pubs__links {
+.pubs__links,
+.card__links {
   display: flex;
   flex-wrap: wrap;
   gap: .4rem;
   margin-top: .55rem;
 }
 
-.pubs__links a {
+.pubs__links a,
+.card__links a {
   padding: .2rem .55rem;
   border: 1px solid var(--rule);
   border-radius: 6px;
@@ -763,7 +776,8 @@ ul {
   color: var(--ink);
 }
 
-.pubs__links a:hover {
+.pubs__links a:hover,
+.card__links a:hover {
   border-color: var(--accent);
   color: var(--accent);
 }

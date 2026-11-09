@@ -1,6 +1,6 @@
 # Media
 
-All six work cards have their images. To swap one, overwrite the file with the same
+All nine work cards have their media. To swap one, overwrite the file with the same
 name and the page picks it up; no code change needed.
 
 ## What each card uses
@@ -11,11 +11,24 @@ name and the page picks it up; no code change needed.
 | Text-guided map retrieval | `work/spatial-rag.jpg` | diagram, fitted whole |
 | Gaze-guided video captioning | `work/gaze-method.jpg` + `work/gaze-dataset.jpg` | two diagrams stacked, fitted whole |
 | Pointing-gesture stop estimation | `work/pointing.jpg` | figure, fitted whole |
-| Learning manipulation from human video | `work/g1-manipulation.jpg` | photo, cropped to fill |
+| FAR: faster agentic robotics | `work/far-method.jpg` | diagram, fitted whole |
+| Whole-body VR teleop of the G1 | `work/g1-teleop-real.jpg` + `work/g1-teleop-sim.jpg` | two YouTube stills side by side, each linking to its video |
+| Learning manipulation from human video | `work/g1-manipulation.jpg` + `work/g1-pick-place.jpg` | photo plus a YouTube still, the still links to the video |
+| F1TENTH autonomous racing | `work/f1tenth.mp4` + `work/f1tenth-poster.jpg` | silent looping clip, poster frame shown for reduced motion |
 | Who to follow in a crowd | `work/pedestrian.jpg` | figure, fitted whole |
 
 Every image links to its own full-size file, so a reader who wants to actually read a
 diagram can click it.
+
+## Video
+
+`f1tenth.mp4` is re-encoded from `images/F1_tenth.mp4` trimmed to the first 13 seconds, at 480px wide with no audio
+(about 1.1 MB). To redo it:
+
+```sh
+ffmpeg -i images/F1_tenth.mp4 -t 13 -an -c:v libx264 -crf 28 -preset slow \
+  -vf "scale=480:-2" -pix_fmt yuv420p -movflags +faststart media/work/f1tenth.mp4
+```
 
 ## Photos vs figures
 
