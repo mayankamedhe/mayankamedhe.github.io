@@ -12,8 +12,8 @@ name and the page picks it up; no code change needed.
 | Gaze-guided video captioning | `work/gaze-method.jpg` + `work/gaze-dataset.jpg` | two diagrams stacked, fitted whole |
 | Pointing-gesture stop estimation | `work/pointing.jpg` | figure, fitted whole |
 | FAR: faster agentic robotics | `work/far-method.jpg` | diagram, fitted whole |
-| Whole-body VR teleop of the G1 | `work/g1-teleop-real.jpg` + `work/g1-teleop-sim.jpg` | two YouTube stills side by side, each linking to its video |
-| Learning manipulation from human video | `work/g1-manipulation.jpg` + `work/g1-pick-place.jpg` | photo plus a YouTube still, the still links to the video |
+| Whole-body VR teleop of the G1 | `work/g1-teleop-real.jpg` + `work/g1-teleop-sim.jpg` | two YouTube loops side by side, stills shown until they load |
+| Learning manipulation from human video | `work/g1-pick-place.jpg` | YouTube loop, still shown until it loads |
 | F1TENTH autonomous racing | `work/f1tenth.mp4` + `work/f1tenth-poster.jpg` | silent looping clip, poster frame shown for reduced motion |
 | Who to follow in a crowd | `work/pedestrian.jpg` | figure, fitted whole |
 
@@ -22,13 +22,22 @@ diagram can click it.
 
 ## Video
 
-`f1tenth.mp4` is re-encoded from `images/F1_tenth.mp4` trimmed to the first 13 seconds, at 480px wide with no audio
-(about 1.1 MB). To redo it:
+`f1tenth.mp4` is re-encoded from `images/F1_tenth.mp4` trimmed to the first 13 seconds with no audio. The portrait
+frame is cropped to the track and centered on a blurred 16:9 fill, so the whole track shows
+(about 1 MB). To redo it:
 
 ```sh
-ffmpeg -i images/F1_tenth.mp4 -t 13 -an -c:v libx264 -crf 28 -preset slow \
-  -vf "scale=480:-2" -pix_fmt yuv420p -movflags +faststart media/work/f1tenth.mp4
+ffmpeg -i images/F1_tenth.mp4 -t 13 -an -filter_complex \
+  "[0:v]crop=576:610:0:175,split[a][b];[a]scale=960:540:force_original_aspect_ratio=increase,crop=960:540,boxblur=24:2,eq=brightness=-0.1[bg];[b]scale=-2:540[fg];[bg][fg]overlay=(W-w)/2:0" \
+  -c:v libx264 -crf 27 -preset slow -pix_fmt yuv420p -movflags +faststart media/work/f1tenth.mp4
 ```
+
+## YouTube loops
+
+A link with `class="yt"` and `data-yt="<video id>"` gets a muted, looping, control-free
+YouTube embed once its card nears the viewport. The `<img>` inside is the still shown
+before it loads and for readers with reduced motion; clicking opens the video on YouTube.
+Add `yt--right` when the subject sits right of center.
 
 ## Photos vs figures
 

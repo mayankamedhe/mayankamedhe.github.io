@@ -554,9 +554,28 @@ ul {
   object-position: 72% center;
 }
 
-/* The race clip is portrait; frame the straight where the cars pass. */
-.card__media video.pos-track {
-  object-position: center 68%;
+/* YouTube loops sit over their still and are cropped to fill the slot like a
+   photo. Clicks pass through to the link, which opens the video on YouTube. */
+.card__media a.yt {
+  position: relative;
+  overflow: hidden;
+  container-type: size;
+}
+
+.card__media a.yt iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(100cqw, 177.78cqh);
+  height: max(100cqh, 56.25cqw);
+  transform: translate(-50%, -50%);
+  border: 0;
+  pointer-events: none;
+}
+
+/* Subject sits right of center in the frame. */
+.card__media a.yt--right iframe {
+  transform: translate(-68%, -50%);
 }
 
 /* Placeholder shown until a real file lands in media/work/ */

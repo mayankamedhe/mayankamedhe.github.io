@@ -163,23 +163,25 @@
       <div class="work-grid">
 
         <article class="card reveal">
-          <div class="card__media card__media--split" data-placeholder="media/work/smartwatch-robot.jpg">
-            <a href="media/work/smartwatch-robot.jpg" aria-label="View full-size photo of the WaPOCHI robot">
-              <img src="media/work/smartwatch-robot.jpg" alt="The WaPOCHI micro-mobility robot on a street" loading="lazy" decoding="async">
-            </a>
-            <a href="media/work/smartwatch-app.jpg" aria-label="View full-size photo of the companion app in use">
-              <img class="pos-left" src="media/work/smartwatch-app.jpg" alt="A person issuing a voice command to WaPOCHI from a handheld app" loading="lazy" decoding="async">
+          <div class="card__media" data-placeholder="media/work/g1-pick-place.jpg">
+            <a class="yt" data-yt="cs9xwbYZmUU" href="https://www.youtube.com/watch?v=cs9xwbYZmUU" aria-label="Watch the agentic pick-and-place video on YouTube">
+              <img src="media/work/g1-pick-place.jpg" alt="A simulated Unitree G1 reaching for a blue ball on a mat" loading="lazy" decoding="async">
             </a>
           </div>
           <div class="card__body">
-            <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2022–2026</span></p>
-            <h3>Smartwatch-robot interaction</h3>
+            <p class="mono card__meta"><span>CMU × Nissan</span><span>2026–present</span></p>
+            <h3>Learning manipulation from human video</h3>
             <p class="card__desc">
-              VLM-based voice-intent recognition on a smartwatch, grounded into robot control
-              commands for autonomous micro-mobility. Deployed in a public proof-of-concept in
-              unstructured outdoor environments and showcased at IFAC 2023.
+              Teleoperated demonstrations do not scale on a factory floor. My capstone asks
+              whether a Unitree G1 humanoid can learn manipulation mainly from ordinary human
+              video, retargeted onto the robot through NVIDIA GR00T SONIC to pre-train a
+              vision-language-action policy.
             </p>
-            <p class="metric"><span class="metric__value">5,000+</span><span class="metric__label">users reached</span></p>
+            <p class="metric"><span class="metric__value">In progress</span><span class="metric__label">Nissan-sponsored</span></p>
+            <p class="card__links">
+              <a href="https://www.youtube.com/watch?v=cs9xwbYZmUU">Agentic pick-and-place</a>
+              <a href="https://www.youtube.com/@R2RCMU">Team channel</a>
+            </p>
           </div>
         </article>
 
@@ -208,16 +210,16 @@
 
         <article class="card reveal">
           <div class="card__media card__media--split" data-placeholder="media/work/g1-teleop-real.jpg">
-            <a href="https://www.youtube.com/watch?v=mCz4AMIlXJs" aria-label="Watch the real-world G1 teleoperation video on YouTube">
+            <a class="yt" data-yt="mCz4AMIlXJs" href="https://www.youtube.com/watch?v=mCz4AMIlXJs" aria-label="Watch the real-world G1 teleoperation video on YouTube">
               <img src="media/work/g1-teleop-real.jpg" alt="Two operators beside a Unitree G1 humanoid holding a red tray in the lab" loading="lazy" decoding="async">
             </a>
-            <a href="https://www.youtube.com/watch?v=1t6P3ezJdj8" aria-label="Watch the MuJoCo G1 teleoperation video on YouTube">
+            <a class="yt yt--right" data-yt="1t6P3ezJdj8" href="https://www.youtube.com/watch?v=1t6P3ezJdj8" aria-label="Watch the MuJoCo G1 teleoperation video on YouTube">
               <img class="pos-right" src="media/work/g1-teleop-sim.jpg" alt="An operator holding a VR controller while a simulated G1 mirrors the pose in MuJoCo" loading="lazy" decoding="async">
             </a>
           </div>
           <div class="card__body">
             <p class="mono card__meta"><span>CMU MRSD</span><span>2026</span></p>
-            <h3><a href="https://mayankchandak.vercel.app/projects/unitree-g1-sonic-teleop">Whole-body VR teleop of the G1</a></h3>
+            <h3>Whole-body VR teleop of the G1</h3>
             <p class="card__desc">
               Whole-body teleoperation of a 29-DOF Unitree G1 with dexterous hands, driven by
               NVIDIA GR00T SONIC from a neck-mounted Meta Quest 3S. Body-follow walking, hot
@@ -234,28 +236,18 @@
         </article>
 
         <article class="card reveal">
-          <div class="card__media card__media--split" data-placeholder="media/work/g1-manipulation.jpg">
-            <a href="media/work/g1-manipulation.jpg" aria-label="View full-size photo of the Unitree G1">
-              <img class="pos-high" src="media/work/g1-manipulation.jpg" alt="A Unitree G1 humanoid suspended in a safety harness inside a test cage" loading="lazy" decoding="async">
-            </a>
-            <a href="https://www.youtube.com/watch?v=cs9xwbYZmUU" aria-label="Watch the agentic pick-and-place video on YouTube">
-              <img src="media/work/g1-pick-place.jpg" alt="A simulated Unitree G1 reaching for a blue ball on a mat" loading="lazy" decoding="async">
-            </a>
+          <div class="card__media">
+            <video src="media/work/f1tenth.mp4" poster="media/work/f1tenth-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="F1TENTH cars racing around a tube-lined indoor track"></video>
           </div>
           <div class="card__body">
-            <p class="mono card__meta"><span>CMU × Nissan</span><span>2026–present</span></p>
-            <h3>Learning manipulation from human video</h3>
+            <p class="mono card__meta"><span>Carnegie Mellon</span><span>2026</span></p>
+            <h3>F1TENTH autonomous racing</h3>
             <p class="card__desc">
-              Teleoperated demonstrations do not scale on a factory floor. My capstone asks
-              whether a Unitree G1 humanoid can learn manipulation mainly from ordinary human
-              video, retargeted onto the robot through NVIDIA GR00T SONIC to pre-train a
-              vision-language-action policy.
+              A 1:10-scale autonomous race car: 2D LiDAR particle-filter localization, RRT*
+              planning tracked by pure pursuit, and follow-the-gap for reactive obstacle
+              avoidance, raced head-to-head on a tight indoor track.
             </p>
-            <p class="metric"><span class="metric__value">In progress</span><span class="metric__label">Nissan-sponsored</span></p>
-            <p class="card__links">
-              <a href="https://www.youtube.com/watch?v=cs9xwbYZmUU">Agentic pick-and-place</a>
-              <a href="https://www.youtube.com/@R2RCMU">Team channel</a>
-            </p>
+            <p class="metric"><span class="metric__value">4th</span><span class="metric__label">of 10 teams</span></p>
           </div>
         </article>
 
@@ -278,39 +270,23 @@
         </article>
 
         <article class="card reveal">
-          <div class="card__media">
-            <video class="pos-track" src="media/work/f1tenth.mp4" poster="media/work/f1tenth-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="F1TENTH cars racing around a tube-lined indoor track"></video>
-          </div>
-          <div class="card__body">
-            <p class="mono card__meta"><span>Carnegie Mellon</span><span>2026</span></p>
-            <h3>F1TENTH autonomous racing</h3>
-            <p class="card__desc">
-              A 1:10-scale autonomous race car: 2D LiDAR particle-filter localization, RRT*
-              planning tracked by pure pursuit, and follow-the-gap for reactive obstacle
-              avoidance, raced head-to-head on a tight indoor track.
-            </p>
-            <p class="metric"><span class="metric__value">4th</span><span class="metric__label">of 10 teams</span></p>
-          </div>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__media card__media--stack card__media--figure" data-placeholder="media/work/gaze-method.jpg">
-            <a href="media/work/gaze-method.jpg" aria-label="View the full-size model architecture diagram">
-              <img src="media/work/gaze-method.jpg" alt="Architecture diagram: video, audio and gaze-trace encoders feed a multimodal cross encoder that produces dense captions" loading="lazy" decoding="async">
+          <div class="card__media card__media--split" data-placeholder="media/work/smartwatch-robot.jpg">
+            <a href="media/work/smartwatch-robot.jpg" aria-label="View full-size photo of the WaPOCHI robot">
+              <img src="media/work/smartwatch-robot.jpg" alt="The WaPOCHI micro-mobility robot on a street" loading="lazy" decoding="async">
             </a>
-            <a href="media/work/gaze-dataset.jpg" aria-label="View the full-size dataset collection diagram">
-              <img src="media/work/gaze-dataset.jpg" alt="Dataset diagram: a viewer watches video while eye trace and audio transcription are recorded against a shared timeline" loading="lazy" decoding="async">
+            <a href="media/work/smartwatch-app.jpg" aria-label="View full-size photo of the companion app in use">
+              <img class="pos-left" src="media/work/smartwatch-app.jpg" alt="A person issuing a voice command to WaPOCHI from a handheld app" loading="lazy" decoding="async">
             </a>
           </div>
           <div class="card__body">
-            <p class="mono card__meta"><span>Sato Lab, UTokyo</span><span>2020–2022</span></p>
-            <h3>Gaze-guided video captioning</h3>
+            <p class="mono card__meta"><span>Honda R&amp;D Tokyo</span><span>2022–2026</span></p>
+            <h3>Smartwatch-robot interaction</h3>
             <p class="card__desc">
-              Where a person looks tells you what matters in a scene. I folded eye-gaze priors
-              into I3D features through attention maps for dense video captioning, and released
-              a gaze-aligned description dataset covering 2.5 hours, 33 viewers, and 15 languages.
+              VLM-based voice-intent recognition on a smartwatch, grounded into robot control
+              commands for autonomous micro-mobility. Deployed in a public proof-of-concept in
+              unstructured outdoor environments and showcased at IFAC 2023.
             </p>
-            <p class="metric"><span class="metric__value">+24.4%</span><span class="metric__label">action grounding</span></p>
+            <p class="metric"><span class="metric__value">5,000+</span><span class="metric__label">users reached</span></p>
           </div>
         </article>
 
@@ -347,6 +323,27 @@
               leading or following through a busy street. TensorRT-optimized for Jetson.
             </p>
             <p class="metric"><span class="metric__value">Real-time</span><span class="metric__label">on-device inference</span></p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media card__media--stack card__media--figure" data-placeholder="media/work/gaze-method.jpg">
+            <a href="media/work/gaze-method.jpg" aria-label="View the full-size model architecture diagram">
+              <img src="media/work/gaze-method.jpg" alt="Architecture diagram: video, audio and gaze-trace encoders feed a multimodal cross encoder that produces dense captions" loading="lazy" decoding="async">
+            </a>
+            <a href="media/work/gaze-dataset.jpg" aria-label="View the full-size dataset collection diagram">
+              <img src="media/work/gaze-dataset.jpg" alt="Dataset diagram: a viewer watches video while eye trace and audio transcription are recorded against a shared timeline" loading="lazy" decoding="async">
+            </a>
+          </div>
+          <div class="card__body">
+            <p class="mono card__meta"><span>Sato Lab, UTokyo</span><span>2020–2022</span></p>
+            <h3>Gaze-guided video captioning</h3>
+            <p class="card__desc">
+              Where a person looks tells you what matters in a scene. I folded eye-gaze priors
+              into I3D features through attention maps for dense video captioning, and released
+              a gaze-aligned description dataset covering 2.5 hours, 33 viewers, and 15 languages.
+            </p>
+            <p class="metric"><span class="metric__value">+24.4%</span><span class="metric__label">action grounding</span></p>
           </div>
         </article>
 
@@ -681,6 +678,36 @@
       v.pause();
       v.setAttribute('controls', '');
     });
+  }
+
+  // YouTube-backed media: swap the still for a muted, looping, chrome-less embed once
+  // the card nears the viewport. The still stays as the no-JS and reduced-motion view,
+  // and the link around it still opens the video on YouTube.
+  var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var embed = function (a) {
+    var id = a.getAttribute('data-yt');
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id +
+      '?autoplay=1&mute=1&loop=1&playlist=' + id +
+      '&controls=0&disablekb=1&playsinline=1&rel=0&modestbranding=1&iv_load_policy=3';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture';
+    f.title = a.getAttribute('aria-label') || 'Video';
+    f.setAttribute('tabindex', '-1');
+    f.setAttribute('aria-hidden', 'true');
+    a.appendChild(f);
+  };
+  if (!calm) {
+    var yts = document.querySelectorAll('a.yt[data-yt]');
+    if ('IntersectionObserver' in window) {
+      var yio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { embed(entry.target); yio.unobserve(entry.target); }
+        });
+      }, { rootMargin: '200px 0px' });
+      yts.forEach(function (a) { yio.observe(a); });
+    } else {
+      yts.forEach(embed);
+    }
   }
 
   document.getElementById('year').textContent = new Date().getFullYear();
